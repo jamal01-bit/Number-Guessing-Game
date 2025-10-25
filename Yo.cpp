@@ -1,5 +1,5 @@
 #include <iostream>
 int main() {
 using namespace std;
-cout<<"           Yo\n\n";
+cout<<"           Yo my motherthuggin ninkas!!!!\n\n";
 }
