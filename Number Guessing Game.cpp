@@ -10,7 +10,7 @@ srand(time(0));
 int secret=rand() % 10; 
 int guess; 
 int tries=0;
-const int max_tries=100;
+const int max_tries=30;
 
 
 cout<<"Guess the number, Good luck\n";
@@ -36,7 +36,7 @@ cout<<"Too High, Try again\n";}
 
 if (guess==secret) {
 cout<<"Correct, Well Done!\n"; break;
-
+return 0;
 
 }
 
@@ -50,7 +50,7 @@ cout<<"You have "<<max_tries-tries<<" "<<
 if (tries==max_tries-1) {
     cout<<"Last chance!\n";}
 }
-if (guess!=secret) cout<<"You failed u bum, the number was "<<secret<<", better luck next time";
+if (guess!=secret) cout<<"You failed loser, the number was "<<secret<<", better luck next time\n\n";
 
 }
 
