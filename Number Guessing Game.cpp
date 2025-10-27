@@ -50,7 +50,7 @@ cout<<"You have "<<max_tries-tries<<" "<<
 if (tries==max_tries-1) {
     cout<<"Last chance!\n";}
 }
-if (guess!=secret) cout<<"You failed loser, the number was "<<secret<<", better luck next time\n\n";
+else cout<<"You failed loser, the number was "<<secret<<", better luck next time\n\n";
 
 }
 
