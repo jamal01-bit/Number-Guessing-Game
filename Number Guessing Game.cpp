@@ -13,8 +13,8 @@ int tries=0;
 const int max_tries=5;
 
 
-cout<<"Guess the number, Good luck\n";
-cout<<"You have "<<max_tries<<" guesses remaining\n";
+cout<<"\nGuess the number, Good luck\n";
+cout<<"\nYou have "<<max_tries<<" guesses remaining\n";
 
 
 while (tries<max_tries) {
@@ -26,32 +26,32 @@ tries++;
 
 if (tries<max_tries) {
 if (guess<secret) {
-    cout<<"Too Low, Try again\n";
+    cout<<"\nToo Low, Try again\n";
     }
 
 
 if (guess>secret) {
-cout<<"Too High, Try again\n";} 
+cout<<"\nToo High, Try again\n";} 
 
 
 if (guess==secret) {
-cout<<"Correct, Well Done!\n"; break;
+cout<<"\nCorrect, Well Done!\n"; break;
 return 0;
 
 }
 
 
-cout<<"You have "<<max_tries-tries<<" "<<
+cout<<"\nYou have "<<max_tries-tries<<" "<<
 ((max_tries-tries==1) ? "guess" : "guesses")<<" left\n";
     
 
 
 
 if (tries==max_tries-1) {
-    cout<<"Last chance!";}
+    cout<<"\nLast chance!\n";}
 }
 }
-if (tries==max_tries && guess!=secret) {cout<<"You failed loser, the number was "<<secret<<", better luck next time\n\n";}
+if (tries==max_tries && guess!=secret) {cout<<"\nYou failed loser, the number was "<<secret<<", better luck next time\n\n";}
 
 }
 
