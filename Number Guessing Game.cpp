@@ -10,7 +10,7 @@ srand(time(0));
 int secret=rand() % 10; 
 int guess; 
 int tries=0;
-const int max_tries=10;
+const int max_tries=5;
 
 
 cout<<"Guess the number, Good luck\n";
