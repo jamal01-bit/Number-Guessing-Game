@@ -7,7 +7,7 @@ using namespace std;
 srand(time(0));
 
 
-int secret=rand() % 10; 
+int secret=rand() % 10+1; 
 int guess; 
 int tries=0;
 const int max_tries=5;
@@ -54,5 +54,6 @@ if (tries==max_tries-1) {
 if (tries==max_tries && guess!=secret) {cout<<"You failed loser, the number was "<<secret<<", better luck next time\n\n";}
 
 }
+
 
 
